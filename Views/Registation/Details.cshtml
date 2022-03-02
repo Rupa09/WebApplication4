@@ -1,0 +1,66 @@
+﻿@model WebApplication4.Models.registation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>registation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HallTicket)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HallTicket)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.batch.batch1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.batch.batch1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.course.course1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.course.course1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
